@@ -1,23 +1,107 @@
+* {
+    box-sizing: content-box;
+}
+body{
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    background-image:url("../imagenes/fondo.jpg");
+    background-size: 100%;
+    padding: 10px 150px;
+ }
+
 header{
-    background-color: gray ;
+   background-color:grey;
+    height:150px;
+    
     
 }
-h1 {
-    color: white
-}
-.btn-group .button {
-    float: right;
-    background-color:black; 
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
+a{
+    color:white;
     text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100px;
-    display:header-inline;
-  }
-  .buttonn{
+}
+a:hover{
+    color: #000000;
+}
+/* Comienzo Header */
+.menu {
+    width: 100%;
+    min-height:80px;
+    margin: 0px;
+}
+.menu div{
+float:left;
+}
+.menu-left{
+padding:0px;
+width:20%;
+}
+.menu-left h1{
+color: #FFFFFF;
+padding-left:25px;
+}
+.menu-left img{
+    max-width: 150px;
+}
+.menu-right{
+padding:10px 0px;
+width:80%;
+}
+.menu-right i{
+visibility: hidden;
+}
+.menu-right ul{
+float: right;
+padding-right: 10px;
+}
+.menu-right li{
+list-style-type:none;
+display:inline;
+padding: 5px;
+}
+.menu-hamburger{
+background-color:gray;
+width: 100%;
+min-height:80px;
+margin-top: -15px;
+visibility: hidden;
+}
+.menu-hamburger li{
+list-style-type:none;
+padding: 10px 5px;
+text-align: center;
+}
+.clear {
+    clear: left;
+}
+/* CSS main */
+
+main{
+    min-height: 600px;
+    background-color: rgba(5, 5, 5, 0.7);
+}
+main h1{
+    color: white;
+    padding-left: 25px;
+    font-size:24px;
+}
+/* CSS footer */
+footer{
+    float:left;
+    line-height: 1.5;
+    width: 100%;
+    background-color: grey;
+    vertical-align: bottom;
+    color: white;
+}
+.footer-left{
+    padding:10px 10px;
+}
+.footer-right{
+    padding:10px 10px;
+    text-align: right;
+}
+.buttonn{
     float: left;
     background-color:black; 
     color: white;
@@ -28,14 +112,13 @@ h1 {
     cursor: pointer;
     width: 100px;
     display:header-inline;
-  }
-  body{
-     width: "300";
-     height: auto;
-  }
-  #footer{
-      background-color: gray;
-  }
-  footer{
-      background-color: grey;
-  }
+}
+
+/* Comienza responsivo */
+@media (max-width: 900px) {
+.menu-right i, .show{
+    visibility:visible;
+}
+.menu-right {
+    visibility:hidden;
+}
