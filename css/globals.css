@@ -85,6 +85,16 @@ main h1{
     padding-left: 25px;
     font-size:24px;
 }
+main p{
+    color: white;
+    padding-left: 25px;
+    font-size:14px;
+}
+.formular {
+    color: white;
+    padding-left: 25px;
+    font-size:14px;
+}
 /* CSS footer */
 footer{
     float:left;
@@ -113,7 +123,9 @@ footer{
     width: 100px;
     display:header-inline;
 }
-
+footer a:hover{
+    color: white;
+}
 /* Comienza responsivo */
 @media (max-width: 900px) {
 .menu-right i, .show{
