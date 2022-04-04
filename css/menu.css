@@ -450,6 +450,10 @@ a{
     float:left;
     width:100%
 }
+.w3-third{
+    background-color:rgb(0,0,0);
+    color:#ffffff;
+}
 .w3-col.s1{
     width:8.33333%
 }
